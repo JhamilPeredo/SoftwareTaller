@@ -5,7 +5,7 @@ const api = axios.create({
   baseURL: 'https://softwaretaller.onrender.com/api/',
   headers: { 'Content-Type': 'application/json' },
 });
-
+export default api;
 // ROLES
 export const getRoles = () => api.get('/roles/');
 export const createRol = (data) => api.post('/roles/', data);
